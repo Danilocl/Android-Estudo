@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Servicos">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="623dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="74dp"
+            app:srcCompat="@drawable/detalhe_servico" />
+
+        <TextView
+            android:id="@+id/tituloId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="76dp"
+            android:layout_marginTop="93dp"
+            android:text="Serviços"
+            android:textColor="#51a649"
+            android:textSize="30sp" />
+
+        <ScrollView
+            android:layout_width="344dp"
+            android:layout_height="427dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="330dp"
+                    android:layout_height="408dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/margem"
+                    android:layout_marginBottom="24dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique ante quis arcu volutpat, non sagittis sapien blandit. Vestibulum mollis urna id orci auctor finibus vel fermentum massa. Integer blandit, dolor non hendrerit aliquam, leo nunc semper odio, at hendrerit urna odio vel mi. Aliquam eget justo est. Phasellus eu magna tincidunt, viverra lorem commodo, posuere massa. In in quam hendrerit, vestibulum nisi id, laoreet orci. Aenean ut rhoncus risus, a varius diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer placerat vulputate augue vitae fringilla. Etiam quis laoreet libero. Curabitur maximus mollis mi vel convallis. Aenean aliquam tortor eget purus semper tempor. Sed et tortor viverra, rhoncus metus sit amet, placerat nulla. Pellentesque venenatis lacus nec sapien placerat, sed auctor quam dictum." />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ATMConsultoria</string>
+    <string name="title_activity_clientes">Clientes</string>
+</resources>

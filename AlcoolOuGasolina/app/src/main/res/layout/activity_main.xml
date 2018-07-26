@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutR"
+        android:layout_width="387dp"
+        android:layout_height="519dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/road2"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_above="@+id/cash"
+            android:layout_toEndOf="@+id/cash"
+            android:background="@color/colorAccent"
+            android:text="Preço Gasolina"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/machine"
+            android:layout_width="80dp"
+            android:layout_height="77dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="107dp"
+            android:background="@drawable/gasolinaoualcool"
+            app:srcCompat="@drawable/com"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="37dp" />
+
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="309dp"
+            android:layout_height="73dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="#a0a0a0"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/alcoolText"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/title"
+            android:layout_below="@+id/cash"
+            android:layout_marginTop="-214dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/paddingCaixaTexto"
+            android:textColor="@color/colorPrimary"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/gasolinaText"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/alcoolText"
+            android:layout_toEndOf="@+id/machine"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/paddingCaixaTexto" />
+
+        <ImageView
+            android:id="@+id/cash"
+            android:layout_width="83dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="214dp"
+            app:srcCompat="@drawable/dinheiro" />
+
+        <Button
+            android:id="@+id/butaoID"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="111dp"
+            android:text="@string/TextoBotaoVerificar" />
+
+        <TextView
+            android:id="@+id/resultId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="53dp"
+            android:padding="@dimen/paddingCaixaTexto"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="114dp"
+            android:layout_height="33dp"
+            android:layout_above="@+id/cash"
+            android:layout_alignStart="@+id/title"
+            android:background="@color/colorAccent"
+            android:text="Preço Álcool"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+
+
